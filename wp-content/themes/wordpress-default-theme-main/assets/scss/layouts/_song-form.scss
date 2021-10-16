@@ -1,0 +1,33 @@
+.l-song-form {
+  justify-content: space-between;
+  align-items: flex-end;
+
+  .form__title {
+    text-align: center;
+  }
+
+  .form__group {
+    // overflow: visible;
+
+    &:not(.form__group--full-width) {
+      max-width: 48%;
+    }
+  }
+
+  button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .account-box {
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .form__group {
+      &:not(.form__group--full-width) {
+        max-width: 100%;
+      }
+    }
+  }
+}

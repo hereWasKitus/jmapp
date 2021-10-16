@@ -1,0 +1,171 @@
+.download-btn {
+    display: block;
+}
+
+.footer {
+    background: #0B0D17;
+    color: $main-color;
+    padding: 66px 0 84px 0;
+    @media screen and (max-width: 768px) {
+        padding-top: 35px;
+        padding-bottom: 13px;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 1600px) and (min-width: 769px) {
+            max-width: 94%;
+        }
+        @media screen and (max-width: 1240px) {
+            flex-wrap: wrap;
+        }
+    }
+    &__text {
+        @media screen and (max-width: 1480px) {
+            max-width: 180px;
+        }
+        @media screen and (max-width: 1400px) {
+            width: 60%;
+        }
+        @media screen and (max-width: 1240px) {
+            max-width: 100%;
+            width: 100%;
+            order: 2;
+            margin-top: 40px;
+        }
+        @media screen and (max-width: 800px) {
+            width: 70%;
+        }
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+        a {
+            color: #723dc1;
+        }
+    }
+    &__logo {
+        margin-bottom: 32px;
+        display: block;
+        @media screen and (max-width: 768px) {
+            text-align: center;
+        }
+    }
+    &__socials {
+        @media screen and (max-width: 768px) {
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        a {
+            & + a {
+                margin-left: 20px;
+            }
+        }
+    }
+    &__info {
+        font-weight: normal;
+        font-size: 18.6848px;
+        line-height: 32px;
+        margin-top: 32px;
+        max-width: 360px;
+        @media screen and (max-width: 768px) {
+            font-size: 11px;
+            line-height: 32px;
+            text-align: center;
+            margin-top: 0;
+            max-width: 100%;
+        }
+    }
+    &__title {
+        color: #D9DBE1;
+    }
+    &__app {
+        flex-grow: 1;
+        margin-left: 20px;
+
+        .rtl & {
+            margin-left: unset;
+            margin-right: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media screen and (max-width: 1240px) {
+            order: 1;
+            margin-left: unset;
+            padding-left: 20px;
+
+            .rtl & {
+                margin-right: unset;
+                padding-right: 20px;
+            }
+        }
+
+        @media screen and (max-width: 670px) {
+            padding-left: unset;
+            display: flex;
+
+            iframe {
+                max-width: 320px;
+                min-height: 320px;
+                height: auto;
+                margin: 0 auto;
+            }
+
+            .rtl & {
+                padding-right: unset;
+            }
+        }
+    }
+    &__btn {
+        margin-top: 21px;
+        img {
+            transition: all 0.6s;
+        }
+        &:hover img {
+            transform: scale(1.04);
+        }
+    }
+    &__facebook {
+        margin-right: auto;
+        @media screen and (max-width: 1480px) {
+            margin-right: 0;
+        }
+        @media screen and (max-width: 1240px) {
+            // width: 100%;
+            width: fit-content;
+            order: -1;
+        }
+        @media screen and (max-width: 710px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        @media screen and (max-width: 670px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        .fb-page {
+            & + .fb-page {
+                margin-left: 30px;
+                @media screen and (max-width: 710px) {
+                    margin-left: 0;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+.app-block {
+    &__title {
+        font-weight: 500;
+        font-size: 24.0233px;
+        line-height: 37px;
+    }
+}

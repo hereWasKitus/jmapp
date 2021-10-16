@@ -1,0 +1,53 @@
+.somepage {
+        background-image: linear-gradient(90deg,rgba(94,0,156,.9) 50%,rgba(137,29,223,0)),url(../assets/images/sign_up.png),linear-gradient(115.33deg,#891ddf,#6611ad 67.71%,#5e009c 85.94%);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+    .container {
+        @media screen and (min-width: 768px) {
+            max-width: 80%;
+        }
+    }
+    .post__content {
+        padding: 60px 0 100px 0;
+    }
+    h1, h2, h3 {
+        margin-top: 32px;
+        margin-bottom: 10px;
+        line-height: 1.2;
+        @media screen and (max-width: 768px) {
+            margin-top: 24px;
+        }
+    }
+    ul {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        list-style-type: disc;
+        padding-left: 18px;
+        li {
+            line-height: 1.6;
+        }
+    }
+    p {
+        line-height: 1.6;
+    }
+    h1 {
+        font-size: 42px;
+        @media screen and (max-width: 768px) {
+            font-size: 36px;
+            font-weight: 500;
+        }
+    }
+    h2 {
+        font-size: 36px;
+        font-weight: 700;
+        @media screen and (max-width: 768px) {
+            font-size: 32px;
+            font-weight: 500;
+        }
+    }
+    h3 {
+        font-size: 28px;
+    }
+}

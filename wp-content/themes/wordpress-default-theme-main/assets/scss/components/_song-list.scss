@@ -1,0 +1,60 @@
+.song-list {
+  .song-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.song-item {
+  display: flex;
+  align-items: center;
+
+  font-size: 14px;
+
+  &:not(:last-child) {
+    padding-bottom: 11px;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: .5);
+  }
+
+  &::before {
+    content: '';
+
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-right: 15px;
+
+    background-image: url('../assets/images/Icon/color-music.svg');
+    background-size: cover;
+  }
+
+  &__remove {
+    display: block;
+    width: 14px;
+    height: 18px;
+    margin-left: auto;
+
+    cursor: pointer;
+    background-image: url(../assets/images/Icon/crash.svg);
+    transition: all .15s ease;
+
+    &:hover {
+      filter: brightness(.8);
+    }
+
+    &:active {
+      filter: brightness(.6);
+    }
+  }
+
+  .rtl & {
+    &::before {
+      margin-right: 0;
+      margin-left: 15px;
+    }
+
+    &__remove {
+      margin-left: unset;
+      margin-right: auto;
+    }
+  }
+}

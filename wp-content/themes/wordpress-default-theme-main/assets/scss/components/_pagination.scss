@@ -1,0 +1,29 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 43px;
+    @media screen and (max-width: 768px) {
+        margin-top: 17px;
+    }
+    span, a {
+        height: 35px;
+        width: 35px;
+        border-radius: 9px;
+        margin: 0 7px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        color: #545454;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $main-color;
+    }
+    .current {
+        background: #6C00C6;
+        color: $main-color;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "coelix_theme",
+  "version": "1.0.0",
+  "description": "This is Coelix boilerplate theme to start the project. Have fun!",
+  "author": "Coelix",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "WordPress",
+    "Theme"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.7",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "webpack-stream": "^6.1.1"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.12.5"
+  }
+}

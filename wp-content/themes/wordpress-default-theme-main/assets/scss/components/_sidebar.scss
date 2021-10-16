@@ -1,0 +1,124 @@
+.sidebar {
+  $width: 520px;
+  $background-color: #fff;
+  $close_btn_size: 37px;
+
+  position: fixed;
+  top: 0;
+  right: -#{$width};
+
+  height: 100vh;
+  width: 100%;
+  max-width: $width;
+  padding: 50px 25px 0;
+
+  background-color: $background-color;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  transition: all .25s ease;
+
+  &.active {
+    right: 0;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__container {
+    z-index: 1;
+
+    max-height: 100%;
+    margin: 0 -10px; // to enable overflow-x: visible
+    padding: 0 10px;
+
+    background-color: $background-color;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: visible;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__close {
+    $close_btn_size: 37px;
+
+    position: absolute;
+    top: 50%;
+    left: -#{$close_btn_size};
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $close_btn_size;
+    height: $close_btn_size * 2;
+
+    border-top-left-radius: $close_btn_size;
+    border-bottom-left-radius: $close_btn_size;
+    background-color: $background-color;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+
+      width: 14px;
+      height: 14px;
+
+      border-top: 1px solid #891DDF;
+      border-right: 1px solid #891DDF;
+      transform: rotate(45deg);
+    }
+  }
+
+  [data-layout] {
+    display: none;
+    margin-bottom: 50px;
+
+    &.active {
+      display: flex;
+    }
+  }
+
+  .rtl & {
+    right: unset;
+    left: -#{$width};
+
+    &.active {
+      left: 0;
+    }
+
+    &__close {
+      left: calc(100%);
+      transform: rotate(180deg);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    right: 0;
+    top: -100%;
+
+    max-width: 100%;
+
+    &.active {
+      top: 0;
+    }
+
+    &__close {
+      top: 0;
+      left: calc(50% - #{$close_btn_size});
+      box-shadow: 0 0 5px rgba($color: #000000, $alpha: .2);
+
+      width: calc(#{$close_btn_size} * 2);
+      height: $close_btn_size;
+
+      border-top-left-radius: unset;
+      border-bottom-right-radius: $close_btn_size;
+
+      &::before {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

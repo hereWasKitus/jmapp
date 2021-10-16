@@ -1,0 +1,32 @@
+//Base
+@import 'base/normalize';
+@import 'base/fonts';
+@import 'base/vars';
+@import 'base/themes';
+@import 'base/animation';
+@import 'base/icons';
+
+//Components
+@import 'components/header';
+@import 'components/footer';
+@import 'components/blog-item';
+@import 'components/select2';
+@import 'components/form';
+@import 'components/pagination';
+@import 'components/language';
+@import 'components/sidebar';
+@import 'components/song-list';
+@import 'components/photo-block';
+
+// Layouts
+@import 'layouts/song-form';
+
+//Pages
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/archive';
+@import 'pages/single';
+@import 'pages/contact';
+@import 'pages/sign';
+@import 'pages/account';
+@import 'pages/somepage';

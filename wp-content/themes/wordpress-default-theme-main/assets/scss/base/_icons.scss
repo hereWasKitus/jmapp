@@ -1,0 +1,45 @@
+.symbol {
+  cursor: pointer;
+  flex-shrink: 0;
+  display: inline-block;
+
+  &--pencil {
+    width: 17px;
+    height: 17px;
+    background-image: url(../assets/images/Icon/edit.svg);
+  }
+
+  &--trash {
+    width: 15px;
+    height: 18px;
+    background-image: url(../assets/images/Icon/crash.svg);
+  }
+
+  &--close {
+    font-size: 20px;
+    width: 1em;
+    height: 1em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 1px;
+      background-color: #E0E0E0;
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      transform: rotate(45deg);
+    }
+  }
+}
